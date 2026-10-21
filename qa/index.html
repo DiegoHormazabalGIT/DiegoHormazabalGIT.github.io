@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>QA Engineer · Diego Hormazábal</title>
+  <meta name="description" content="QA Engineer con foco en automatización E2E y de API, pruebas en CI y calidad de producto.">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="/" aria-label="Diego Hormazábal, inicio"><span class="br">[</span><span class="d">D</span><span class="h">H</span><span class="br">]</span></a>
+      <nav class="nav" aria-label="Principal">
+        <a href="/video/">Edición de video</a>
+        <a href="/qa/" aria-current="page">QA</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="wrap">
+    <section class="hero">
+      <span class="tc q">QA Engineer · Automatización y calidad de producto</span>
+      <h1>Automatizo lo repetible y pruebo lo que importa.</h1>
+      <p class="lede">Trabajo como QA asegurando que cada release llegue sin sorpresas. Escribo pruebas automatizadas E2E y de API, las integro al pipeline y reporto bugs que el equipo entiende a la primera.</p>
+      <div class="btns">
+        <a class="btn teal" href="https://github.com/DiegoHormazabalGIT" rel="noopener">GitHub</a>
+        <a class="btn" href="#contacto">Contacto</a>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <div class="sec-head">
+        <span class="tc q">Proyectos</span>
+        <h2>Código que se puede revisar</h2>
+      </div>
+      <div class="grid3">
+        <article class="card qtop">
+          <span class="tc q">Playwright · TypeScript</span>
+          <h3>Este sitio, probado en CI</h3>
+          <p class="muted">El portfolio tiene su propia suite: carga de cada página, enlaces internos, navegación en móvil, accesibilidad con axe y errores de consola. Corre en GitHub Actions en cada cambio.</p>
+          <div class="chips"><span class="chip">Playwright</span><span class="chip">axe-core</span><span class="chip">GitHub Actions</span></div>
+          <a href="https://github.com/DiegoHormazabalGIT/DiegoHormazabalGIT.github.io" rel="noopener">Ver repositorio →</a>
+        </article>
+        <article class="card qtop">
+          <span class="tc q">Selenium · Python</span>
+          <h3>Framework con Page Object</h3>
+          <p class="muted">Suite sobre un sandbox de automatización, organizada en capas: páginas, localizadores, funciones reutilizables y configuración. Cubre popups, checkboxes, campos de texto, elementos ocultos con ID dinámico y selects.</p>
+          <div class="chips"><span class="chip">Selenium</span><span class="chip">unittest</span><span class="chip">POM</span></div>
+        </article>
+        <article class="card qtop">
+          <span class="tc q">Cypress · JavaScript</span>
+          <h3>E2E sobre un sitio real</h3>
+          <p class="muted">Pruebas de la home de Free Range Testers: título, navegación, formularios y selectores por texto, data-testid y XPath, con capturas como evidencia de cada paso.</p>
+          <div class="chips"><span class="chip">Cypress</span><span class="chip">XPath</span><span class="chip">Evidencias</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="ci">
+      <div class="sec-head">
+        <span class="tc q">En vivo</span>
+        <h2>Lo que corre cada vez que actualizo este sitio</h2>
+      </div>
+      <div class="terminal" role="img" aria-label="Salida de ejemplo de la suite de Playwright de este sitio">
+        <div><span class="dim">$</span> npx playwright test</div>
+        <div><span class="ok">✓</span> portada carga con título y dos caminos</div>
+        <div><span class="ok">✓</span> /video y /qa cargan sin errores de consola</div>
+        <div><span class="ok">✓</span> todos los enlaces internos responden 200</div>
+        <div><span class="ok">✓</span> sin violaciones de accesibilidad serias (axe)</div>
+        <div><span class="ok">✓</span> el contacto es visible en móvil</div>
+        <div><span class="ok">✓</span> sin scroll horizontal a 375 px</div>
+      </div>
+    </section>
+
+    <section id="como-trabajo">
+      <div class="sec-head">
+        <span class="tc q">Cómo trabajo</span>
+        <h2>Calidad desde el inicio, no al final</h2>
+      </div>
+      <div class="grid2">
+        <div class="card"><h3>Pruebo temprano</h3><p class="muted">Reviso historias y criterios de aceptación antes de que exista el código. Un bug encontrado en el refinamiento cuesta minutos.</p></div>
+        <div class="card"><h3>Automatizo con criterio</h3><p class="muted">Primero el camino crítico y lo que más se repite. Pruebas estables, legibles y fáciles de mantener.</p></div>
+        <div class="card"><h3>Reporto para que se entienda</h3><p class="muted">Pasos claros, resultado esperado y obtenido, y un video corto del bug. Ahí uso mi otro oficio.</p></div>
+        <div class="card"><h3>Pienso en el usuario</h3><p class="muted">Además de que funcione, me fijo en que se entienda, cargue rápido y sea accesible.</p></div>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="sec-head">
+        <span class="tc q">Herramientas</span>
+        <h2>Stack</h2>
+      </div>
+      <div class="stack-groups">
+        <div class="card"><span class="tc">UI / E2E</span><div class="chips"><span class="chip">Cypress</span><span class="chip">Selenium</span><span class="chip">Playwright</span></div></div>
+        <div class="card"><span class="tc">Lenguajes</span><div class="chips"><span class="chip">JavaScript</span><span class="chip">TypeScript</span><span class="chip">Python</span></div></div>
+        <div class="card"><span class="tc">CI / Control</span><div class="chips"><span class="chip">GitHub Actions</span><span class="chip">Git</span></div></div>
+        <div class="card"><span class="tc">Calidad</span><div class="chips"><span class="chip">Page Object</span><span class="chip">Accesibilidad</span><span class="chip">Reportes</span></div></div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="contact">
+        <span class="tc q">Contacto</span>
+        <h2>¿Buscas QA para tu equipo?</h2>
+        <p class="muted">Abierto a roles de QA semi senior, remotos o híbridos.</p>
+        <div class="btns">
+          <a class="btn teal" href="mailto:CONTACTO_EMAIL" data-contact="email">CONTACTO_EMAIL</a>
+          <a class="btn" href="https://github.com/DiegoHormazabalGIT" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© 2026 Diego Hormazábal</span>
+      <a href="/video/">También edito video →</a>
+    </div>
+  </footer>
+</body>
+</html>
